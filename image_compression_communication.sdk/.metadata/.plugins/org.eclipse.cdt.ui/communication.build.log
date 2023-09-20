@@ -1,0 +1,39 @@
+14:46:14 **** Auto Build of configuration Debug for project communication ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../communication_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:41:6: warning: unused variable 'imageWaiting' [-Wunused-variable]
+  int imageWaiting = 1;
+      ^~~~~~~~~~~~
+../src/helloworld.c:40:6: warning: unused variable 'totalSent' [-Wunused-variable]
+  u32 totalSent = 0;
+      ^~~~~~~~~
+../src/helloworld.c:39:6: warning: unused variable 'totalReceived' [-Wunused-variable]
+  u32 totalReceived = 0;
+      ^~~~~~~~~~~~~
+../src/helloworld.c:36:6: warning: unused variable 'status' [-Wunused-variable]
+  u32 status;
+      ^~~~~~
+../src/helloworld.c:35:6: warning: unused variable 'coded_data' [-Wunused-variable]
+  u32 coded_data[8][32];
+      ^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: communication.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../communication_bsp/ps7_cortexa9_0/lib -o "communication.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: communication.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size communication.elf  |tee "communication.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19536	   5240	  22584	  47360	   b900	communication.elf
+'Finished building: communication.elf.size'
+' '
+
+14:46:19 Build Finished (took 5s.466ms)
+

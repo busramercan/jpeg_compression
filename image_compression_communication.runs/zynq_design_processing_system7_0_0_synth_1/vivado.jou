@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Aug 17 19:21:03 2023
+# Process ID: 11676
+# Current directory: C:/Users/busra/Vivado/ImageCompression/image_compression_communication/image_compression_communication.runs/zynq_design_processing_system7_0_0_synth_1
+# Command line: vivado.exe -log zynq_design_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynq_design_processing_system7_0_0.tcl
+# Log file: C:/Users/busra/Vivado/ImageCompression/image_compression_communication/image_compression_communication.runs/zynq_design_processing_system7_0_0_synth_1/zynq_design_processing_system7_0_0.vds
+# Journal file: C:/Users/busra/Vivado/ImageCompression/image_compression_communication/image_compression_communication.runs/zynq_design_processing_system7_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source zynq_design_processing_system7_0_0.tcl -notrace
